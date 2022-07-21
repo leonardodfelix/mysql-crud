@@ -2,7 +2,7 @@ package routes
 
 import (
 	"github.com/gorilla/mux"
-	"github.com/leonardodfelix/mysql-crud/pgk/controllers"
+	"github.com/leonardodfelix/mysql-crud/pkg/controllers"
 )
 
 var RegisterUserRoutes = func(router *mux.Router) {
