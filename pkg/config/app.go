@@ -2,7 +2,7 @@ package config
 
 import (
 	"github.com/jinzhu/gorm"
-	// "github.com/jinzhu/gorm/dialects/mysql"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 )
 
 var (
@@ -10,7 +10,7 @@ var (
 )
 
 func Connect() {
-	d, err := gorm.Open("mysql", "username:Password123@/dbname?charset=utf8&parseTime=True&loc=Local")
+	d, err := gorm.Open("mysql", "root:ASDasd@123@/mysql_crud?charset=utf8&parseTime=True&loc=Local")
 	if err != nil {
 		panic(err)
 	}
